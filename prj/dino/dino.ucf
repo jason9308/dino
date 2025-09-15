@@ -1,0 +1,39 @@
+NET "lcd_rgb[23]" LOC = A7 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[22]" LOC = B6 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[21]" LOC = A6 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[20]" LOC = B5 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[19]" LOC = A5 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[18]" LOC = C4 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[17]" LOC = A4 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[16]" LOC = C5 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[15]" LOC = A11 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[14]" LOC = B10 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[13]" LOC = A10 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[12]" LOC = C9 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[11]" LOC = A9 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[10]" LOC = B8 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[9]" LOC = A8 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[8]" LOC = C7 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[7]" LOC = F14 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[6]" LOC = B14 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[5]" LOC = A14 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[4]" LOC = C13 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[3]" LOC = A13 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[2]" LOC = B12 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[1]" LOC = A12 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rgb[0]" LOC = C11 | IOSTANDARD = "LVCMOS33";
+NET "lcd_bl" LOC = D16 | IOSTANDARD = "LVCMOS33";
+NET "lcd_clk" LOC = B15 | IOSTANDARD = "LVCMOS33";
+NET "lcd_de" LOC = C15 | IOSTANDARD = "LVCMOS33";
+NET "lcd_hs" LOC = B16 | IOSTANDARD = "LVCMOS33";
+NET "lcd_rst" LOC = H14 | IOSTANDARD = "LVCMOS33";
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_vs" LOC = C16 | IOSTANDARD = "LVCMOS33";
+NET "sys_clk" LOC = N8 | IOSTANDARD = "LVCMOS33";
+NET "sys_rst_n" LOC = G16 | IOSTANDARD = "LVCMOS33";
+
+# key
+NET "key"         LOC = R3 | IOSTANDARD = "LVCMOS33";
+

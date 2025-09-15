@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml dino.twx dino.ncd -o dino.twr dino.pcf -ucf dino.ucf
+
+Design file:              dino.ncd
+Physical constraint file: dino.pcf
+Device,package,speed:     xc6slx16,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sys_clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+key         |   -1.087(R)|      FAST  |    6.649(R)|      SLOW  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<7>  |    2.066(R)|      SLOW  |   -0.600(R)|      FAST  |sys_clk_IBUF_BUFG |   0.000|
+lcd_rgb<15> |    2.192(R)|      SLOW  |   -0.401(R)|      FAST  |sys_clk_IBUF_BUFG |   0.000|
+lcd_rgb<23> |    3.018(R)|      SLOW  |   -0.805(R)|      FAST  |sys_clk_IBUF_BUFG |   0.000|
+sys_rst_n   |    1.688(R)|      SLOW  |    8.239(R)|      SLOW  |lcd_pclk_BUFG     |   0.000|
+            |    4.484(R)|      SLOW  |   -1.208(R)|      FAST  |sys_clk_IBUF_BUFG |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock sys_clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+lcd_bl      |        16.258(R)|      SLOW  |         7.216(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_clk     |        15.142(R)|      SLOW  |         5.811(R)|      FAST  |sys_clk_IBUF_BUFG |   0.000|
+lcd_de      |        22.334(R)|      SLOW  |         9.797(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<0>  |        22.573(R)|      SLOW  |         8.874(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<1>  |        22.517(R)|      SLOW  |         8.867(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<2>  |        22.706(R)|      SLOW  |         8.970(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<3>  |        23.073(R)|      SLOW  |         9.212(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<4>  |        23.232(R)|      SLOW  |         9.304(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<5>  |        23.641(R)|      SLOW  |         9.541(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<6>  |        23.536(R)|      SLOW  |         9.507(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<7>  |        22.748(R)|      SLOW  |         9.002(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<8>  |        24.799(R)|      SLOW  |        10.169(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<9>  |        23.794(R)|      SLOW  |         9.649(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<10> |        23.643(R)|      SLOW  |         9.569(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<11> |        23.615(R)|      SLOW  |         9.546(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<12> |        23.410(R)|      SLOW  |         9.417(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<13> |        23.439(R)|      SLOW  |         9.461(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<14> |        23.380(R)|      SLOW  |         9.407(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<15> |        22.778(R)|      SLOW  |         9.003(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<16> |        25.416(R)|      SLOW  |        10.553(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<17> |        25.429(R)|      SLOW  |        10.556(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<18> |        25.626(R)|      SLOW  |        10.667(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<19> |        25.860(R)|      SLOW  |        10.815(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<20> |        25.278(R)|      SLOW  |        10.502(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<21> |        25.045(R)|      SLOW  |        10.376(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<22> |        25.275(R)|      SLOW  |        10.498(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rgb<23> |        24.615(R)|      SLOW  |        10.071(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+lcd_rst     |        16.265(R)|      SLOW  |         7.223(R)|      FAST  |lcd_pclk_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |   18.418|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sys_clk        |lcd_clk        |   15.389|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Aug 11 22:05:34 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 210 MB
+
+
+
