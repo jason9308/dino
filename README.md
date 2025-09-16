@@ -42,7 +42,7 @@
 - 在掃描座標 (`pixel_xpos`, `pixel_ypos`) 到達對應範圍時，讀取 bitmap 判斷是否輸出像素。  
 - 這種方法能有效管理圖形，並且方便切換不同影格（例如恐龍的奔跑動畫）。
 
-(以下是一個仙人掌圖形的例子)
+(以上是一個仙人掌圖形的例子)
 ![image](https://hackmd.io/_uploads/S1ohM0rsge.png)
 
 ---
