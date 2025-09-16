@@ -59,7 +59,7 @@
 ### 3.3 恐龍的高度計算公式
 恐龍的跳躍以一個 **離散化的拋物線公式** 模擬重力效果：  
 
-$jump\_height = (jump\_time \times 14) - \frac{(jump\_time^2)}{4}$
+$jump_height = (jump_time \times 14) - \frac{(jump\_time^2)}{4}$
 
 
 - `jump_time` 為跳躍經過的時間（以遊戲節拍計數）。  
