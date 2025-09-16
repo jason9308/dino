@@ -54,6 +54,24 @@
 - 當 `offset` 超出螢幕範圍後，再次依照偽隨機間隔生成新的仙人掌組合。  
 此方法簡單高效，能模擬出障礙物連續出現的效果。
 
+-    **移動邏輯**
+        ```verilog
+        // cactus 往左移動，超過螢幕寬度就重置
+        if (offset >= (11'd800 + cactus_width))
+            offset <= 11'd0;
+        else
+            offset <= offset + move_rate;
+        ```
+        
+-    **繪圖邏輯**
+        ```verilog=
+        // 判斷 pixel 是否落在 cactus bitmap 範圍
+        if ((pixel_xpos >= (800 - offset)) && (pixel_xpos < (800 + cactus_width - offset))) begin
+            if (cactus0[pixel_ypos - (CACTUS_Y - CACTUS_H)]
+                      [pixel_xpos - (800 - offset)])
+                cactus_draw = 1;
+        end
+        ```
 ---
 
 ### 3.3 恐龍的高度計算公式
@@ -69,6 +87,14 @@ $jump height = (jump time \times 14) - \frac{(jump time^2)}{4}$
 （下圖顯示此公式對應的函數曲線，可看出小恐龍跳起的最大高度為200個像素）
 ![image](https://hackmd.io/_uploads/Skkd4RHsxl.png)
 
+---
+
+### 3.4 遊戲邏輯（有限狀態機）
+
+遊戲狀態以 FSM 控制，流程如下：
+- **IDLE**：待機狀態，等待玩家按下按鈕開始遊戲。  
+- **PLAY**：遊戲進行中，每幀檢查恐龍與仙人掌的像素是否重疊。  
+- **OVER**：若偵測到碰撞，切換至遊戲結束狀態，可透過reset按鈕回到 IDLE。
 
 ---
 
