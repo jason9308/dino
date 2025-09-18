@@ -2,7 +2,8 @@
 
 # 基於 FPGA 的像素化小恐龍遊戲
 
-![image](https://hackmd.io/_uploads/rJKZ2Troxe.png)
+![image](https://hackmd.io/_uploads/ByUQl6tjle.png)
+![image](https://hackmd.io/_uploads/BJNVlpKjge.png)
 
 ## 一、專題簡介
 這個課程專題旨在實作一款 **像素化小恐龍遊戲**（類似 Chrome Dino Game），以 **FPGA + Verilog HDL** 實現，並且顯示在LCD螢幕。  
